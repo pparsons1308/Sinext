@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <style>
+      #myCarousel.carousel.slide {
+      width: 100%; 
+      max-width: 4000px;
+    }
+    </style>
+
+    <nav class="navbar navbar-light navbar-fixed-top" style="background-color: #ffffff;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" style="background-color: #457ab2;" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only" style="background-color: #f8dfe6;">Toggle navigation</span>
+            <span class="icon-bar" style="background-color: #f8dfe6;"></span>
+            <span class="icon-bar" style="background-color: #f8dfe6;"></span>
+            <span class="icon-bar" style="background-color: #f8dfe6;"></span>
+          </button>
+          <a class="navbar-brand" href="#">Sinext</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#about">About us</a></li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li><a href="#contact">Contact us</a></li>
+            <li><a href="#language">Language</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container" id = "home">
+      <div id="myCarousel" class="carousel slide">
+          <div class="row justify-content-center">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+        <!-- 轮播（Carousel）项目 -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <!--<p class="vc-inner" align="center" vertical-align:middle>
+            <a href="http://baidu.com">我是文字,我在图片上面</a>
+          </p>-->
+          <img src="L1005484.jpg" class="img-responsive" alt="First slide">   
+        </div>
+        <div class="item">
+          <img src="L1007290.jpg" class="img-responsive" alt="First slide">
+        </div>
+        <div class="item">
+          <img src="L1007767.jpg" class="img-responsive" alt="First slide">
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel" 
+      data-slide="prev"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="carousel-control right" href="#myCarousel" 
+        data-slide="next"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!--<section class="page-section bg-primary" id="Home">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2 class="text-white mt-0">我们公司</h2>
+              <hr class="divider light my-4">
+              <p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+              <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+
+            </div>
+          </div>
+          
+          <h2>图片</h2>
+          <p> .img-responsive类让图片支持响应式，将很好地扩展到父元素 (通过改变窗口大小查看效果):</p>                  
+          <img src="123.jpg" class="img-responsive" alt="Cinque Terre" width="304" height="236"> 
+            
+        </div>
+    </section>-->
+    <section class="page-section bg-primary" id="about">
+        <div class="container">
+
+          <div class="row justify-content-center">
+            <div class="text-center">
+              <h2 class="text-white mt-0">We've got what you need!</h2>
+              <hr class="divider light my-4">
+              <p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+              <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
