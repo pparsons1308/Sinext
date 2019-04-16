@@ -23,6 +23,7 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -33,13 +34,20 @@
 
   <body>
     <style>
-      #myCarousel.carousel.slide {
-      width: 100%; 
-      max-width: 4000px;
-    }
+    
+    .carousel {
+    position: relative;
+    
+    margin-block-end: 5%;
+  }
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 450px;
+    } 
     </style>
-
-    <nav class="navbar navbar-light navbar-fixed-top" style="background-color: #ffffff;">
+    <nav class="navbar navbar-light navbar-fixed-top" style="background-color: #ffffff;
+    position: relative ;  margin-block-start: 2%;   margin-block-end: 2%;  ">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" style="background-color: #457ab2;" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -48,80 +56,131 @@
             <span class="icon-bar" style="background-color: #f8dfe6;"></span>
             <span class="icon-bar" style="background-color: #f8dfe6;"></span>
           </button>
-          <a class="navbar-brand" href="#">Sinext</a>
+          <a class="navbar-brand" href="#">
+            <p style=font-size:260%> Sinext</p>
+           </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#product">Product</a></li>
-            <li><a href="#about">About us</a></li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+
+            
+            
+            <li  class="dropdown">
+                <a href="#" class="dropdown-toggle " data-toggle="dropdown">
+                    经营产品
+                    <b class="caret"></b>
+                </a>
+                <ul id = "dropdownFood" class="dropdown-menu ">
+                    
+                  
+                    <li><a href="#">酒水</a></li>
+                    <li><a href="#">冷冻食品</a></li>
+                    <li><a href="#">Jasper Report</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的链接</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">另一个分离的链接</a></li>
+                </ul>
             </li>
-            <li><a href="#contact">Contact us</a></li>
-            <li><a href="#language">Language</a></li>
+            
+            
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    关于我们
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">jmeter</a></li>
+                    <li><a href="#">EJB</a></li>
+                    <li><a href="#">Jasper Report</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的链接</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">另一个分离的链接</a></li>
+                </ul>
+            </li>
+
+
+
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contactUs">联系我们</a>
+            </li>
+            <li><a href="#language">EN/中文</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <div class="container" id = "home">
-      <div id="myCarousel" class="carousel slide">
-          <div class="row justify-content-center">
+
+    <div id="myCarousel" class="carousel slide">
         <!-- 轮播（Carousel）指标 -->
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>   
+      
         <!-- 轮播（Carousel）项目 -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <!--<p class="vc-inner" align="center" vertical-align:middle>
-            <a href="http://baidu.com">我是文字,我在图片上面</a>
-          </p>-->
-          <img src="L1005484.jpg" class="img-responsive" alt="First slide">   
-        </div>
-        <div class="item">
-          <img src="L1007290.jpg" class="img-responsive" alt="First slide">
-        </div>
-        <div class="item">
-          <img src="L1007767.jpg" class="img-responsive" alt="First slide">
-        </div>
-    </div>
-    <!-- 轮播（Carousel）导航 -->
-    <a class="carousel-control left" href="#myCarousel" 
-      data-slide="prev"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span></a>
-    <a class="carousel-control right" href="#myCarousel" 
-        data-slide="next"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
-        </div>
-      </div>
-    </div><!-- /.container -->
-    <!--<section class="page-section bg-primary" id="Home">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-              <h2 class="text-white mt-0">我们公司</h2>
-              <hr class="divider light my-4">
-              <p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-              <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+        <div class="carousel-inner" style = "">
 
+          <div class="item active">
+                <img class="carousel-image" src="homeImage/1.jpg" class="img-responsive" alt="First slide">   
+                </div>
+                <div class="item">
+                  <img class="carousel-image" src="homeImage/2.jpg" class="img-responsive" alt="First slide">
+                </div>
+                <div class="item">
+                  <img class="carousel-image" src="homeImage/3.jpg" class="img-responsive" alt="First slide">
+                </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+      </div>
+      
+      
+      <!-- 控制按钮 
+      
+      <div style="text-align:center;">
+        <input type="button" class="btn start-slide" value="Start">
+        <input type="button" class="btn pause-slide" value="Pause">
+        <input type="button" class="btn prev-slide" value="Previous Slide">
+        <input type="button" class="btn next-slide" value="Next Slide">
+        <input type="button" class="btn slide-one" value="Slide 1">
+        <input type="button" class="btn slide-two" value="Slide 2">
+        <input type="button" class="btn slide-three" value="Slide 3">
+      </div>-->
+
+      <section class="page-section bg-primary" id="about" style="position: relative;
+      margin-block-start: 3%;
+      margin-block-end: 1%;  " >
+          <div class="container">
+  
+            <div class="row justify-content-center">
+              <div class="text-center">
+                <h3 class="text-white mt-0">Mobile</h3>
+                <hr class="divider light my-4">
+                <p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+                <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+              </div>
             </div>
           </div>
-          
-          <h2>图片</h2>
-          <p> .img-responsive类让图片支持响应式，将很好地扩展到父元素 (通过改变窗口大小查看效果):</p>                  
-          <img src="123.jpg" class="img-responsive" alt="Cinque Terre" width="304" height="236"> 
-            
-        </div>
-    </section>-->
+        </section>
+
     <section class="page-section bg-primary" id="about">
         <div class="container">
 
           <div class="row justify-content-center">
             <div class="text-center">
-              <h2 class="text-white mt-0">We've got what you need!</h2>
-              <hr class="divider light my-4">
+              <h3 class="text-white mt-0">Contact US</h3>
+              <hr class="vertical-divider light my-4">
               <p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
               <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
             </div>
@@ -129,14 +188,58 @@
         </div>
       </section>
 
-
+  
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>  
+        // 下拉菜单的导航条可以点击
+        $(document).ready(function(){
+            $(document).off('click.bs.dropdown.data-api');
+        });
+        // 鼠标悬停弹下拉菜单
+        $('li.dropdown').mouseover(function() {   
+             $(this).addClass('open');
+        }).mouseout(function() { 
+          $(this).removeClass('open');
+        });   
+          
+        </script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+        /*$(function(){
+          // 初始化轮播
+          $(".start-slide").click(function(){
+            $("#myCarousel").carousel('cycle');
+          });
+          // 停止轮播
+          $(".pause-slide").click(function(){
+            $("#myCarousel").carousel('pause');
+          });
+          // 循环轮播到上一个项目
+          $(".prev-slide").click(function(){
+            $("#myCarousel").carousel('prev');
+          });
+          // 循环轮播到下一个项目
+          $(".next-slide").click(function(){
+            $("#myCarousel").carousel('next');
+          });
+          // 循环轮播到某个特定的帧 
+          $(".slide-one").click(function(){
+            $("#myCarousel").carousel(0);
+          });
+          $(".slide-two").click(function(){
+            $("#myCarousel").carousel(1);
+          });
+          $(".slide-three").click(function(){
+            $("#myCarousel").carousel(2);
+          });
+        });*/
+      </script>
+
   </body>
 </html>
