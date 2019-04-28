@@ -34,17 +34,29 @@
 
   <body>
     <style>
-    
+    .carousel-inner > .item > img {
+    margin: 0 auto;
+    object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  width: 100%;
+  max-height: 500px;
+  margin-bottom: 1rem;
+    }
+  
     .carousel {
     position: relative;
     
     margin-block-end: 5%;
-  }
+    }
     .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     display: block;
     max-width: 100%;
-    height: 450px;
+    height: 500px;
     } 
+    #carousel-image {
+      vertical-align: middle;
+      text-align: center;
+    }
     </style>
     <nav class="navbar navbar-light navbar-fixed-top" style="background-color: #ffffff;
     position: relative ;  margin-block-start: 2%;   margin-block-end: 2%;  ">
@@ -106,6 +118,9 @@
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#contactUs">联系我们</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contactUs">News</a>
+          </li>
             <li><a href="#language">EN/中文</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -119,20 +134,28 @@
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
         </ol>   
       
         <!-- 轮播（Carousel）项目 -->
         <div class="carousel-inner" style = "">
 
           <div class="item active">
-                <img class="carousel-image" src="homeImage/1.jpg" class="img-responsive" alt="First slide">   
-                </div>
-                <div class="item">
-                  <img class="carousel-image" src="homeImage/2.jpg" class="img-responsive" alt="First slide">
-                </div>
-                <div class="item">
-                  <img class="carousel-image" src="homeImage/3.jpg" class="img-responsive" alt="First slide">
-                </div>
+            <img class="carousel-image" src="homeImage/1.jpeg" class="img-responsive" alt="First slide">
+          </div>
+          <div class="item">
+            <img class="carousel-image" src="homeImage/2.jpeg" class="img-responsive" alt="First slide">
+          </div>
+          <div class="item">
+            <img class="carousel-image" src="homeImage/3.jpeg" class="img-responsive" alt="First slide">
+          </div>
+          <div class="item">
+            <img class="carousel-image" src="homeImage/4.jpeg" class="img-responsive" alt="First slide">
+          </div>
+          <div class="item">
+            <img class="carousel-image" src="homeImage/5.jpeg" class="img-responsive" alt="First slide">
+          </div>
         </div>
         <!-- 轮播（Carousel）导航 -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
