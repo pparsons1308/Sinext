@@ -1,257 +1,674 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <title>Sinext Company</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="contact/logo.png">
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sinext</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/logo_head.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="vendor/revolution/css/navigation.css">
+	<link rel="stylesheet" type="text/css" href="vendor/revolution/css/settings.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/MagnificPopup/magnific-popup.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body class="animsition">
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Header -->
+	<header>
+		<!-- Header desktop -->
+		<nav class="container-header-desktop">
+			<div class="top-bar">
+				<div class="content-topbar container flex-sb-c h-full">
+					<div class="size-w-0 flex-wr-s-c">
+						<div class="t1-s-1 cl-13 m-r-50">
+							<span class="fs-16 m-r-6">
+								<i class="fa fa-home" aria-hidden="true"></i>
+							</span>
+							<span>Suite 308, 53 Spencer Street, Docklands, VIC 3008</span>
+						</div>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+						<div class="t1-s-1 cl-13 m-r-50">
+							<span class="fs-16 m-r-6">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+							</span>
+							<span>+(61) 4 1202 8726</span>
+						</div>
 
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+						<div class="t1-s-1 cl-13 m-r-50">
+							<span class="fs-16 m-r-6">
+								<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							</span>
+							<span class="size-w-4">
+									<a style="color: #b8d7e0" href="mailto:enquire.sinext@gmail.com">enquire.sinext@gmail.com</a>
+							</span>
+						</div>
+					
+					</div>
+				</div>
+			</div>
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-    
+			<div class="wrap-menu-desktop">
+				<div class="limiter-menu-desktop container">					
+					<!-- Logo desktop -->		
+					<div class="logo">
+						<a href="index.html"><img src="images/icons/logo.png" alt="LOGO"></a>
+					</div>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+					<!-- Menu desktop -->
+					<div class="menu-desktop">
+						<ul class="main-menu respon-sub-menu">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
 
-  <body>
-    <style>
-    .carousel-inner > .item > img {
-    margin: 0 auto;
-    object-fit: none; /* Do not scale the image */
-  object-position: center; /* Center the image within the element */
-  width: 100%;
-  max-height: 500px;
-  margin-bottom: 1rem;
-    }
+							<li>
+								<a href="about.html">About Us</a>
+							</li>
+							<!--future function>-->
+							<!--<li>
+								<a href="Product-list.html">Products</a>
+								<ul class="sub-menu">
+										<li><a href="Product-detail-01.html">Products Detail v1</a></li>
+										<li><a href="Product-detail-02.html">Product Detail v2</a></li>
+										<li><a href="Product-detail-03.html">Product Detail v3</a></li>
+								</ul>
+							</li>-->
+							<li>
+								<a href="contact.html">Contact us</a>
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>	
+		</nav>
 
-    .dropdown-menu {
-    width: 70px !important;
-}
-  
-    .carousel {
-    position: relative;
-    
-    margin-block-end: 5%;
-    }
-    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-    display: block;
-    max-width: 100%;
-    height: 500px;
-    } 
-    #carousel-image {
-      vertical-align: middle;
-      text-align: center;
-    }
-    </style>
-    <nav class="navbar navbar-light navbar-fixed-top" style="background-color: #ffffff;
-    position: relative ;  margin-block-start: 2%;   margin-block-end: 2%;  ">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" style="background-color: #457ab2;" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only" style="background-color: #f8dfe6;">Toggle navigation</span>
-            <span class="icon-bar" style="background-color: #f8dfe6;"></span>
-            <span class="icon-bar" style="background-color: #f8dfe6;"></span>
-            <span class="icon-bar" style="background-color: #f8dfe6;"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <p style=font-size:260%> Sinext</p>
-           </a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#home">Home</a></li>
+		<!-- Header Mobile -->
+		<nav class="container-header-mobile">
+			<div class="wrap-header-mobile">
+				<!-- Logo moblie -->		
+				<div class="logo-mobile">
+					<a href="index.html"><img src="images/icons/logo.png" alt="LOGO"></a>
+				</div>
+				
 
-            
-            
-            <li  class="dropdown">
-                <a href="#" class="dropdown-toggle " data-toggle="dropdown">
-                    Products
-                    <b class="caret"></b>
-                </a>
-                <ul id = "dropdownFood" class="dropdown-menu ">
-                    
-                  
-                    <li><a href="#">Wine</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Chicken</a></li>
-                    <li><a href="#">Beef</a></li>
-                    <li><a href="#">Lamb</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Seafood</a></li>
-                </ul>
-            </li>
-          
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#contactUs">About Us</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#contactUs">Contact Us</a>
-            </li>
-            <li><a href="home_cn.html">EN/中文</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+				<!-- Button show menu -->
+				<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</div>			
+			</div>
+
+			<div class="menu-mobile">
+				<ul class="top-bar-m p-l-20 p-tb-8">
+					<li>
+						<div class="t1-s-1 cl-5 p-tb-3">
+							<span class="fs-16 m-r-6">
+								<i class="fa fa-home" aria-hidden="true"></i>
+							</span>
+							<span>Suite 308, 53 Spencer Street, Docklands, VIC 3008</span>
+						</div>
+					</li>
+
+					<li>
+						<div class="t1-s-1 cl-5 p-tb-3">
+							<span class="fs-16 m-r-6">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+							</span>
+							<span>+(61) 4 1202 8726</span>
+						</div>
+					</li>
+
+					<li>
+						<div class="t1-s-1 cl-13 m-r-50">
+								<span class="fs-16 m-r-6">
+									<i class="fa fa-envelope-o" aria-hidden="true"></i>
+								</span>
+								<span class="size-w-4">
+										<a style="color: #b8d7e0" href="mailto:enquire.sinext@gmail.com">enquire.sinext@gmail.com</a>
+								</span>
+							</div>
+					</li>
+
+					<!--<li>
+						<div>
+							<a href="#" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
+								<i class="fa fa-facebook-official"></i>	
+							</a>
+
+							<a href="#" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
+								<i class="fa fa-twitter"></i>	
+							</a>
+
+							<a href="#" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
+								<i class="fa fa-google-plus"></i>	
+							</a>
+
+							<a href="#" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
+								<i class="fa fa-instagram"></i>	
+							</a>
+
+							<a href="#" class="fs-16 cl-5 hov-link2 trans-02 m-r-15">
+								<i class="fa fa-linkedin"></i>	
+							</a>
+						</div>
+					</li>-->
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Slide -->
+	<section class="slider">
+		<div class="rev_slider_wrapper fullwidthbanner-container">
+			<div id="rev_slider_1" class="rev_slider fullwidthabanner" data-version="5.4.5" style="display:none">
+				<ul>
+					<!-- Slide 1 -->
+					<li data-transition="slidingoverlayhorizontal">
+						<img src="images/ship.jpg" alt="IMG-SLIDE" class="rev-slidebg">
+
+						<h2 class="tp-caption tp-resizeme caption-1 text-uppercase" 
+						data-frames='[{"delay":500,"speed":1500,"frame":"0","from":"x:left;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+					    data-visibility="['on', 'on', 'on', 'on']"
+ 
+					    data-fontsize="['48', '48', '48', '38']" 
+					    data-lineheight="['58', '58', '58', '58']"
+					    data-color="['#FFF']" 
+					    data-textAlign="['center', 'center', 'center', 'center']"
+					 
+					    data-x="['center']" 
+					    data-y="['center']" 
+					    data-hoffset="['0', '0', '0', '0']" 
+					    data-voffset="['-83', '-83', '-83', '-93']" 
+					 
+					    data-width="['1200','992','768','480']"
+					    data-height="['auto', 'auto', 'auto', 'auto']" 
+					    data-whitespace="['normal']" 
+					 
+					    data-paddingtop="[0, 0, 0, 0]"
+					    data-paddingright="[15, 15, 15, 15]"
+					    data-paddingbottom="[0, 0, 0, 0]"
+					    data-paddingleft="[15, 15, 15, 15]"
+
+					    data-basealign="slide" 
+    					data-responsive_offset="off"
+					    >Sinext</h2>
+
+					    <p class="tp-caption tp-resizeme caption-2" 
+						data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"x:right;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+					    data-visibility="['on', 'on', 'on', 'on']"
+ 
+					    data-fontsize="['30', '30', '30', '25']" 
+					    data-lineheight="['39', '39', '39', '39']"
+					    data-color="['#FFF']" 
+					    data-textAlign="['center', 'center', 'center', 'center']"
+					 
+					    data-x="['center']" 
+					    data-y="['center']" 
+					    data-hoffset="['0', '0', '0', '0']" 
+					    data-voffset="['-13', '-13', '-13', '-13']" 
+					 
+					    data-width="['1200','992','768','480']"
+					    data-height="['auto', 'auto', 'auto', 'auto']" 
+					    data-whitespace="['normal']" 
+					 
+					    data-paddingtop="[0, 0, 0, 0]"
+					    data-paddingright="[15, 15, 15, 15]"
+					    data-paddingbottom="[0, 0, 0, 0]"
+					    data-paddingleft="[15, 15, 15, 15]"
+
+					    data-basealign="slide" 
+    					data-responsive_offset="off"
+					    >
+					    	Import and Export Specialists
+					    </p>
+
+					    <div class="tp-caption tp-resizeme caption-3 flex-wr-c-c d-flex"
+					    data-frames='[{"delay":3000,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+					    data-x="['center']" 
+					    data-y="['center']" 
+					    data-hoffset="['0', '0', '0', '0']" 
+					    data-voffset="['88', '88', '88', '88']" 
+					 
+					    data-width="['1200','992','768','480']"
+					    data-height="['auto']" 
+					 
+					    data-paddingtop="[0, 0, 0, 0]"
+					    data-paddingright="[10, 10, 10, 10]"
+					    data-paddingbottom="[0, 0, 0, 0]"
+					    data-paddingleft="[10, 10, 10, 10]"
+
+					    data-basealign="slide" 
+    					data-responsive_offset="off"
+					    >
+						    <a href="projects-grid.html" class="btn1 flex-c-c">
+						    	Our products
+						    </a>
+
+						    <a href="about.html" class="btn2 flex-c-c">
+						    	Learn more
+						    </a>
+					    </div>
+					</li>
+
+					<!-- Slide 2 -->
+					<li data-transition="slidingoverlayvertical">
+						<img src="images/ship.jpg" alt="IMG-SLIDE" class="rev-slidebg">
+
+						<h2 class="tp-caption tp-resizeme caption-1 text-uppercase" 
+						data-frames='[{"delay":500,"speed":1500,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+					    data-visibility="['on', 'on', 'on', 'on']"
+ 
+					    data-fontsize="['48', '48', '48', '38']" 
+					    data-lineheight="['58', '58', '58', '58']"
+					    data-color="['#FFF']" 
+					    data-textAlign="['center', 'center', 'center', 'center']"
+					 
+					    data-x="['center']" 
+					    data-y="['center']" 
+					    data-hoffset="['0', '0', '0', '0']" 
+					    data-voffset="['-83', '-83', '-83', '-93']" 
+					 
+					    data-width="['1200','992','768','480']"
+					    data-height="['auto', 'auto', 'auto', 'auto']" 
+					    data-whitespace="['normal']" 
+					 
+					    data-paddingtop="[0, 0, 0, 0]"
+					    data-paddingright="[15, 15, 15, 15]"
+					    data-paddingbottom="[0, 0, 0, 0]"
+					    data-paddingleft="[15, 15, 15, 15]"
+
+					    data-basealign="slide" 
+    					data-responsive_offset="off"
+					    >Sinext</h2>
+
+					    <p class="tp-caption tp-resizeme caption-2" 
+						data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+					    data-visibility="['on', 'on', 'on', 'on']"
+ 
+					    data-fontsize="['30', '30', '30', '25']" 
+					    data-lineheight="['39', '39', '39', '39']"
+					    data-color="['#FFF']" 
+					    data-textAlign="['center', 'center', 'center', 'center']"
+					 
+					    data-x="['center']" 
+					    data-y="['center']" 
+					    data-hoffset="['0', '0', '0', '0']" 
+					    data-voffset="['-13', '-13', '-13', '-13']" 
+					 
+					    data-width="['1200','992','768','480']"
+					    data-height="['auto', 'auto', 'auto', 'auto']" 
+					    data-whitespace="['normal']" 
+					 
+					    data-paddingtop="[0, 0, 0, 0]"
+					    data-paddingright="[15, 15, 15, 15]"
+					    data-paddingbottom="[0, 0, 0, 0]"
+					    data-paddingleft="[15, 15, 15, 15]"
+
+					    data-basealign="slide" 
+    					data-responsive_offset="off"
+					    >
+					    	Import and Export Specialists
+					    </p>
+
+					    <div class="tp-caption tp-resizeme caption-3 flex-wr-c-c d-flex"
+					    data-frames='[{"delay":3000,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+					    data-x="['center']" 
+					    data-y="['center']" 
+					    data-hoffset="['0', '0', '0', '0']" 
+					    data-voffset="['88', '88', '88', '88']" 
+					 
+					    data-width="['1200','992','768','480']"
+					    data-height="['auto']" 
+					 
+					    data-paddingtop="[0, 0, 0, 0]"
+					    data-paddingright="[10, 10, 10, 10]"
+					    data-paddingbottom="[0, 0, 0, 0]"
+					    data-paddingleft="[10, 10, 10, 10]"
+
+					    data-basealign="slide" 
+    					data-responsive_offset="off"
+					    >
+						    <a href="projects-grid.html" class="btn1 flex-c-c">
+						    	Our products
+						    </a>
+
+						    <a href="about.html" class="btn2 flex-c-c">
+						    	Learn more
+						    </a>
+					    </div>
+					</li>
+				</ul>				
+			</div>
+		</div>
+	</section>
+
+	<!-- Product -->
+	<section class="bg-0 p-t-92 p-b-60">
+		<div class="container">
+			<!-- Title section -->
+			<div class="flex-col-c-c p-b-50">
+				<h3 class="t1-b-1 cl-3 txt-center m-b-11">
+					Our Products
+				</h3>
+
+				<div class="size-a-2 bg-3"></div>
+			</div>
+
+			<!--  -->
+			<div class="row justify-content-center">
+				<div class="col-sm-10 col-md-8 col-lg-4 p-b-40">
+					<div class="bg-10 h-full">
+						<a href="contact.html" class="hov-img0 of-hidden bg-0">
+							<img src="images/wine.jpeg" alt="IMG">
+						</a>
+
+						<div class="p-rl-30 p-t-26 p-b-20">
+							<h4 class="p-b-9">
+								<a href="contact.html" class="t1-m-1 cl-0 hov-link2 trans-02">
+									Wine
+								</a>
+							</h4>
+
+							<p class="t1-s-2 cl-13">
+								Brand your own wine and import directly to China. Suppliers are approved for export to China.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-10 col-md-8 col-lg-4 p-b-40">
+					<div class="bg-10 h-full">
+						<a href="contact.html" class="hov-img0 of-hidden bg-0">
+							<img src="images/Chicken.jpg" alt="IMG">
+						</a>
+
+						<div class="p-rl-30 p-t-26 p-b-20">
+							<h4 class="p-b-9">
+								<a href="contact.html" class="t1-m-1 cl-0 hov-link2 trans-02">
+									Chicken
+								</a>
+							</h4>
+
+							<p class="t1-s-2 cl-13">
+									Chicken is sourced from Australia and Brazil. Only Grade A chicken is purchased. Factories are approved for export to China.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-10 col-md-8 col-lg-4 p-b-40">
+					<div class="bg-10 h-full">
+						<a href="contact.html" class="hov-img0 of-hidden bg-0">
+							<img src="images/beef.jpg" alt="IMG">
+						</a>
+
+						<div class="p-rl-30 p-t-26 p-b-20">
+							<h4 class="p-b-9">
+								<a href="contact.html" class="t1-m-1 cl-0 hov-link2 trans-02">
+									Beef & Lamb
+								</a>
+							</h4>
+
+							<p class="t1-s-2 cl-13">
+									Finest quality Australian and New Zealand beef and lamb cuts. Abattoirs are approved for export to China.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Call back -->
+	<section class="bg-10 p-t-92 p-b-45">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 p-b-30">
+					<!-- Title section -->
+					<div class="flex-col-c-s p-b-20">
+						<h3 class="t1-b-1 cl-0 m-b-11">
+							Contact Request
+						</h3>
+
+						<div class="size-a-2 bg-0"></div>
+					</div>
+
+					<p class="t1-s-2 cl-0">
+						Leave your information and message. We will contact you. 
+					</p>
+				</div>
+				<form class="col-lg-8 p-b-30 p-t-8" action="https://formspree.io/enquire.sinext@gmail.com" method="post">
+					<div class="row">
+						<div class="col-sm-6 p-b-25">
+							<div class="size-a-3">
+								<input class="form-control s-full bg-0 t1-m-2 cl-6 plh-6 p-rl-20" type="text" name="name" placeholder="Name">
+							</div>
+						</div>
+
+						<div class="col-sm-6 p-b-25">
+							<div class="size-a-3">
+								<input class="form-control s-full bg-0 t1-m-2 cl-6 plh-6 p-rl-20" type="email" name="email" placeholder="Email">
+							</div>
+						</div>
+
+						<div class="col-sm-6 p-b-25">
+							<div class="size-a-3">
+									<textarea name="message" class="form-control s-full bg-0 t1-m-2 cl-6 plh-6 p-rl-20"id="doc-vld-ta-2-1" minlength="10"  placeholder="Message"></textarea></br>
+							</div>
+						</div>
+
+						<div class="col-sm-6 p-b-25">
+							<button class="btn flex-c-c size-a-4 bg-11 t1-s-2 text-uppercase cl-0 hov-btn2 trans-02 p-rl-15" type="submit">
+								Send Message
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- News -->
+	<section class="bg-12 p-t-20 p-b-60">
+		<div class="container">
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="parallax100 kit-overlay2 p-t-35 p-b-10" style="background-image: url(images/bg_last.jpg);">
+			<div class="container">
+				<div class="row justify-content-center justify-content-md-start">
+					<div class="col-sm-8 col-md-4 col-lg-3 p-b-20">
+							
+						<div class="size-h-1 flex-s-e p-b-6 m-b-18">
+								<h4 class="t1-m-3 text-uppercase cl-0">
+									</h4>
+
+						</div>
+
+						<div>
+							<a href="#">
+								<img class="max-s-full" src="images/icons/logo.png" class="img-responsive" style="max-width: 180px;" alt="IMG">
+							</a>
+							<!--todo social media-->
+							<!--<div class="flex-wr-s-c p-t-10">
+								<a href="#" class="flex-c-c size-a-7 borad-50per bg-11 fs-16 cl-0 hov-btn2 trans-02 m-r-10">
+									<i class="fa fa-facebook"></i>	
+								</a>
+
+								<a href="#" class="flex-c-c size-a-7 borad-50per bg-11 fs-16 cl-0 hov-btn2 trans-02 m-r-10">
+									<i class="fa fa-twitter"></i>	
+								</a>
+
+								<a href="#" class="flex-c-c size-a-7 borad-50per bg-11 fs-16 cl-0 hov-btn2 trans-02 m-r-10">
+									<i class="fa fa-google-plus"></i>	
+								</a>
+
+								<a href="#" class="flex-c-c size-a-7 borad-50per bg-11 fs-16 cl-0 hov-btn2 trans-02 m-r-10">
+									<i class="fa fa-instagram"></i>	
+								</a>
+
+								<a href="#" class="flex-c-c size-a-7 borad-50per bg-11 fs-16 cl-0 hov-btn2 trans-02 m-r-10">
+									<i class="fa fa-linkedin"></i>	
+								</a>
+							</div>-->
+						</div>
+					</div>
+
+					<div class="col-sm-8 col-md-4 col-lg-3 p-b-20">
+						<div class="size-h-1 flex-s-e m-b-18">
+							<h4 class="t1-m-3 text-uppercase cl-0">
+								Contact us
+							</h4>
+						</div>
+
+						<ul>
+							<li class="flex-wr-s-s t1-s-2 cl-13 p-b-9">
+								<span class="size-w-3">
+									<i class="fa fa-home" aria-hidden="true"></i>
+								</span>
+
+								<span class="size-w-4">
+										Suite 308, 53 Spencer Street, Docklands, Victoria 3008, Australia
+								</span>
+							</li>
+
+							<li class="flex-wr-s-s t1-s-2 cl-13 p-b-9">
+								<span class="size-w-3">
+									<i class="fa fa-envelope-o" aria-hidden="true"></i>
+								</span>
+
+								<span class="size-w-4">
+									<a style="color: #b8d7e0" href="mailto:enquire.sinext@gmail.com">enquire.sinext@gmail.com</a>
+								</span>
+							</li>
+
+							<li class="flex-wr-s-s t1-s-2 cl-13 p-b-9">
+								<span class="size-w-3">
+									<i class="fa fa-phone" aria-hidden="true"></i>
+								</span>
+
+								<span class="size-w-4">
+									AU: (+61) 4 1202 8726
+									<br>
+									AU: (+61) 4 6659 6693
+									<br>
+									CN: (+86) 186 1686 3325
+								</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-sm-8 col-md-4 col-lg-3 p-b-20">
+						<div class="size-h-1 flex-s-e m-b-18">
+							<h4 class="t1-m-3 text-uppercase cl-0">
+								Company
+							</h4>
+						</div>
+
+						<div class="flex-wr-s-s">
+							<ul class="w-50">
+								<li class="kit-list1 p-b-9">
+									<a href="index.html" class="t1-s-2 cl-13 hov-link2 trans-02">
+										Home
+									</a>
+								</li>
+
+								<li class="kit-list1 p-b-9">
+									<a href="about.html" class="t1-s-2 cl-13 hov-link2 trans-02">
+										About us
+									</a>
+								</li>
+
+								<li class="kit-list1 p-b-9">
+									<a href="contact.html" class="t1-s-2 cl-13 hov-link2 trans-02">
+										Contact us
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-8 col-md-4 col-lg-3 p-b-20">
+						<div class="size-h-1 flex-s-e m-b-18">
+							<h4 class="t1-m-3 text-uppercase cl-0">
+								Wechat
+							</h4>
+						</div>
+						<div class="flex-wr-s-s">
+							<img src = "QRcode.jpeg" style="max-width: 140px;"></br> &#160</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg-10">
+			<div class="container txt-center p-tb-15">
+				<span class="t1-s-2 cl-14">
+					Copyright &copy; 2019 Sinext Pty Ltd </br></a> 
+				</span>
+			</div>
+		</div>
+	</footer>
 
 
-    <div id="myCarousel" class="carousel slide">
-        <!-- 轮播（Carousel）指标 -->
-        <ol class="carousel-indicators" >
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-          <li data-target="#myCarousel" data-slide-to="4"></li>
-        </ol>   
-      
-        <!-- 轮播（Carousel）项目 -->
-        <div class="carousel-inner" >
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
+	<script src="vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="vendor/revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script src="vendor/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+	<script src="vendor/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script src="vendor/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+	<script src="vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script src="vendor/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script src="vendor/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script src="vendor/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+	<script src="vendor/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script src="js/revo-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/parallax100/parallax100.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/waypoint/jquery.waypoints.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countterup/jquery.counterup.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/slick/slick.min.js"></script>
+	<script src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 
-          <div class="item active">
-            <img class="carousel-image" src="homeImage/1.jpg" class="img-responsive" alt="First slide" style = "margin-bottom: 0px">
-          </div>
-          <div class="item">
-            <img class="carousel-image" src="homeImage/2.jpg" class="img-responsive" alt="First slide" style = "margin-bottom: 0px">
-          </div>
-          <div class="item">
-            <img class="carousel-image" src="homeImage/3.jpg" class="img-responsive" alt="First slide" style = "margin-bottom: 0px">
-          </div>
-          <div class="item">
-            <img class="carousel-image" src="homeImage/4.jpg" class="img-responsive" alt="First slide" style = "margin-bottom: 0px">
-          </div>
-          <div class="item">
-            <img class="carousel-image" src="homeImage/5.jpg" class="img-responsive" alt="First slide" style = "margin-bottom: 0px">
-          </div>
-        </div>
-        <!-- 轮播（Carousel）导航 -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-      </div>
-      
-      
-      <!-- 控制按钮 
-      
-      <div style="text-align:center;">
-        <input type="button" class="btn start-slide" value="Start">
-        <input type="button" class="btn pause-slide" value="Pause">
-        <input type="button" class="btn prev-slide" value="Previous Slide">
-        <input type="button" class="btn next-slide" value="Next Slide">
-        <input type="button" class="btn slide-one" value="Slide 1">
-        <input type="button" class="btn slide-two" value="Slide 2">
-        <input type="button" class="btn slide-three" value="Slide 3">
-      </div>-->
-
-
-
-    <section class="page-section bg-primary" id="about">
-        <div class="container">
-
-          <div class="row justify-content-center">
-            <div class="text-center">
-              <h3 class="text-white mt-0">Contach Us</h3>
-              <!--<hr class="vertical-divider light my-4">-->
-              <table class="table">
-                <tr>
-                    <td><h4>WeChat</h4>
-                      &emsp;&emsp;&emsp;<img src = "contact/QRcode.jpeg" height="110px">&emsp;&emsp;&emsp;
-                    </td>
-                    <td><h4>Mobile</h4>
-                      AU: +61 4 1202 8726</br>
-                      AU: +61 4 6659 6693</br>
-                      CN: +86 186 1686 3325</br>
-                      </td>
-                    <td><h4>Address</h4>
-                      <p>Sinext Pty Ltd</br>
-                      Suite 308, 53 Spencer Street</br>
-                      Docklands, Victoria 3008</br>
-                      Australia
-                      </p></td>
-                </tr>
-                </table>
-              
-              <!--<a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>-->
-            </div>
-          </div>
-        </div>
-      </section>
-
-  
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <script>  
-        // 下拉菜单的导航条可以点击
-        $(document).ready(function(){
-            $(document).off('click.bs.dropdown.data-api');
-        });
-        // 鼠标悬停弹下拉菜单
-        $('li.dropdown').mouseover(function() {   
-             $(this).addClass('open');
-        }).mouseout(function() { 
-          $(this).removeClass('open');
-        });   
-          
-        </script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script>
-        /*$(function(){
-          // 初始化轮播
-          $(".start-slide").click(function(){
-            $("#myCarousel").carousel('cycle');
-          });
-          // 停止轮播
-          $(".pause-slide").click(function(){
-            $("#myCarousel").carousel('pause');
-          });
-          // 循环轮播到上一个项目
-          $(".prev-slide").click(function(){
-            $("#myCarousel").carousel('prev');
-          });
-          // 循环轮播到下一个项目
-          $(".next-slide").click(function(){
-            $("#myCarousel").carousel('next');
-          });
-          // 循环轮播到某个特定的帧 
-          $(".slide-one").click(function(){
-            $("#myCarousel").carousel(0);
-          });
-          $(".slide-two").click(function(){
-            $("#myCarousel").carousel(1);
-          });
-          $(".slide-three").click(function(){
-            $("#myCarousel").carousel(2);
-          });
-        });*/
-      </script>
-
-  </body>
+</body>
 </html>
